@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-chevron" viewBox="0 0 9 6" fill="none">
+    <path d="M1 1L4.5 4.5L8 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-check" viewBox="0 0 14 14" fill="none">
+    <path d="M11.667 3.5L5.25 9.917L2.333 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-heart" viewBox="0 0 22 22" fill="none">
+    <path d="M11 19.25S3 14.592 1.8 9.775C0.865 6.026 3.392 3 6.65 3C8.908 3 10.202 4.243 11 5.245C11.798 4.243 13.092 3 15.35 3C18.608 3 21.135 6.026 20.2 9.775C19 14.592 11 19.25 11 19.25Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-zoom" viewBox="0 0 24 24" fill="none">
+    <path d="M9 3H3V9M15 3H21V9M21 15V21H15M9 21H3V15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9 9L3 3M15 9L21 3M9 15L3 21M15 15L21 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>

@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	font-family:
+		-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto,
+		sans-serif;
+	background: #f6f6f6;
+	color: #32312f;
+	padding: 24px;
+}
+
+.stub__icon {
+	width: 64px;
+	height: 64px;
+	background: #ff5c00;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.stub__icon svg {
+	width: 32px;
+	height: 32px;
+	stroke: #fff;
+	fill: none;
+	stroke-width: 1.8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.stub__title {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.stub__text {
+	font-size: 16px;
+	color: #656565;
+	line-height: 1.5;
+	text-align: center;
+	max-width: 360px;
+}
+
+.stub__back {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 14px 28px;
+	border-radius: 14px;
+	background: #32312f;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.2s ease;
+}
+
+.stub__back:hover {
+	background: #4a4947;
+}
+
+.stub__back svg {
+	width: 16px;
+	height: 16px;
+	stroke: currentColor;
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	transform: rotate(90deg);
+}

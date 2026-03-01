@@ -1,0 +1,35 @@
+.catalog {
+	padding: 16px;
+}
+
+.catalog__inner {
+	width: 100%;
+	max-width: 1036px;
+	margin: 0 auto;
+}
+
+.catalog__header {
+	margin-bottom: 24px;
+}
+
+.catalog__title {
+	margin: 0 0 8px;
+	font-size: 28px;
+	line-height: 1.15;
+	font-weight: 700;
+	color: var(--color-text);
+}
+
+.catalog__subtitle {
+	margin: 0;
+	max-width: 720px;
+	font-size: 15px;
+	line-height: 1.45;
+	color: var(--color-text-muted);
+}
+
+.catalog__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+}

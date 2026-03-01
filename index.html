@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Карточки</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="catalog">
+      <div class="catalog__inner">
+
+
+        <section
+          class="catalog__grid"
+          data-catalog-grid
+          aria-label="Список товаров"
+        ></section>
+      </div>
+    </main>
+
+    <template id="product-card-template">
+      <article class="card" data-card>
+        <div class="card__media">
+          <div class="card__slider swiper" aria-label="Фото товара">
+            <div class="swiper-wrapper"></div>
+          </div>
+
+          <div class="card__nav">
+            <button
+              class="card__nav-button card__nav-button--prev"
+              type="button"
+              aria-label="Предыдущее фото"
+            >
+              <svg
+                class="card__nav-icon card__nav-icon--prev"
+                aria-hidden="true"
+              >
+                <use href="./svg/sprite.svg#icon-chevron"></use>
+              </svg>
+            </button>
+            <button
+              class="card__nav-button card__nav-button--next"
+              type="button"
+              aria-label="Следующее фото"
+            >
+              <svg
+                class="card__nav-icon card__nav-icon--next"
+                aria-hidden="true"
+              >
+                <use href="./svg/sprite.svg#icon-chevron"></use>
+              </svg>
+            </button>
+          </div>
+
+          <button class="card__zoom" type="button" aria-label="Открыть галерею">
+            <svg class="card__zoom-icon" aria-hidden="true">
+              <use href="./svg/sprite.svg#icon-zoom"></use>
+            </svg>
+          </button>
+
+          <div class="card__description" aria-hidden="true">
+            <p class="card__description-text" data-field="description"></p>
+          </div>
+
+          <div class="card__gallery" hidden></div>
+        </div>
+
+        <div class="card__body">
+          <div class="card__pagination swiper-pagination"></div>
+
+          <div class="card__meta">
+            <div class="card__article-line">
+              <span>Артикул</span>
+              <span aria-hidden="true">—</span>
+              <span data-field="article"></span>
+            </div>
+            <h2 class="card__title" data-field="title"></h2>
+          </div>
+
+          <section class="card__mods" aria-label="Варианты материалов">
+            <p class="card__mods-title">Варианты материалов</p>
+            <div class="card__mods-list"></div>
+          </section>
+
+          <div class="card__purchase">
+            <div class="card__price">
+              <p class="card__price-label">Цена от</p>
+              <p class="card__price-value" data-field="price"></p>
+              <div class="card__price-meter">
+                <span>Погонный метр от</span>
+                <span aria-hidden="true">—</span>
+                <strong data-field="pricePerMeter"></strong>
+              </div>
+            </div>
+
+            <button class="card__buy" type="button">Купить</button>
+          </div>
+
+          <div class="card__divider" aria-hidden="true"></div>
+
+          <div class="card__footer">
+            <button
+              class="card__like"
+              type="button"
+              aria-label="Добавить в избранное"
+            >
+              <svg class="card__like-icon" aria-hidden="true">
+                <use href="./svg/sprite.svg#icon-heart"></use>
+              </svg>
+              <span class="card__like-count" data-field="likes"></span>
+            </button>
+
+            <a
+              class="card__calc"
+              href="./calculater.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Рассчитать стоимость</span>
+              <svg class="card__calc-icon" aria-hidden="true">
+                <use href="./svg/sprite.svg#icon-chevron"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <template id="card-slide-template">
+      <div class="swiper-slide card__slide">
+        <img class="card__image" src="" alt="" />
+      </div>
+    </template>
+
+    <template id="card-mod-template">
+      <button class="card__mod" type="button">
+        <span class="card__mod-icon" aria-hidden="true">
+          <svg class="card__mod-check">
+            <use href="./svg/sprite.svg#icon-check"></use>
+          </svg>
+        </span>
+        <span class="card__mod-text"></span>
+      </button>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
